@@ -1,0 +1,29 @@
+img{
+    width:58px;
+    float: left;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color:orange;
+    background-color: rgb(252, 245, 215);
+}
+
+h1{
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px
+}
+nav ul li{
+    text-wrap: nowrap;
+}
+nav{
+    
+}
+
+.Order{
+    border-radius: 9px;
+}
