@@ -1,3 +1,14 @@
+main{
+    display:table;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+}
+
 img{
     width:58px;
     float: left;
@@ -7,23 +18,67 @@ body{
     padding: 0;
     color:orange;
     background-color: rgb(252, 245, 215);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1{
-
+    width: 75%;
+    padding-top: 9px;
 }
 
 nav ul {
     list-style: none;
-    padding: 10px
+    padding: 10px;
+    display:inline-table;
 }
 nav ul li{
     text-wrap: nowrap;
+    padding-top: 12px;
 }
 nav{
-    
+    background-color: plum;
+    width: 10%;
 }
 
+nav ul a{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 4px;
+}
+.menuing{
+    
+}
 .Order{
     border-radius: 9px;
+    padding: 3px;
+    background-color: aliceblue;
+    display: inline;
+    margin-bottom: 2px;
+}
+h2{
+    display:inline-table;
+    font-size:50px;
+    border: solid;
+}
+h2 a{
+    text-decoration: none;
+    color:orange;
+}
+main ul{
+    list-style: none;
+    position: relative;
+}
+
+main ul li{
+    text-align: center;
+    display: inline-table;
+    background-color: rgb(182, 240, 248);
+    width: 20%;
+    font:large;
+    color: chocolate;
+    margin:10px;
+    font-size:20px;
 }
