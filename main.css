@@ -1,16 +1,20 @@
 main{
     display:table;
     justify-content: center;
+    margin-left: 130px;
 }
 
 @media (max-width: 768px){
     main{
         flex-direction: column;
     }
+    nav{
+
+    }
 }
 
 img{
-    width:58px;
+    width:75px;
     float: left;
 }
 body{
@@ -35,9 +39,20 @@ nav ul li{
     text-wrap: nowrap;
     padding-top: 12px;
 }
+
+nav ul li a:hover{
+    color:rgb(114, 0, 214);
+}
+/* Nav bar takes up 100% vertical height. */
 nav{
     background-color: plum;
-    width: 10%;
+    width: 130px;
+    height: 100%;
+    margin-top:96px;
+    position: fixed;
+    z-index:1;
+    top:0;
+    left:0;
 }
 
 nav ul a{
@@ -48,20 +63,37 @@ nav ul a{
     border-radius: 20px;
     margin: 4px;
 }
+nav ul a:hover{
+    background-color:rgb(150, 114, 184);
+}
 .menuing{
     
 }
+/* Button for side menu */
 .Order{
     border-radius: 9px;
     padding: 3px;
     background-color: aliceblue;
     display: inline;
+    margin-left: 20px;
     margin-bottom: 2px;
+    vertical-align: center
 }
+/* Menu button */
 h2{
     display:inline-table;
     font-size:50px;
     border: solid;
+    border-radius: 9px;
+    margin-left: 10%;
+    text-align: center;
+}
+/* Image under menu */
+.menu{
+    float:unset;
+    position:static;
+    width: 130px;
+    padding: 5px;
 }
 h2 a{
     text-decoration: none;
@@ -76,9 +108,15 @@ main ul li{
     text-align: center;
     display: inline-table;
     background-color: rgb(182, 240, 248);
-    width: 20%;
+    border-radius: 9px;
+    width: 12px;
     font:large;
     color: chocolate;
     margin:10px;
     font-size:20px;
+}
+/* button under each menu in the main section */
+main .Order{
+    float:right;
+    vertical-align: top;
 }
